@@ -1,0 +1,25 @@
+@keyframes modal-video-inner {
+  from {
+    transform: translate(-50%, 100px);
+  }
+
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+.videoWrapper {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  animation-name: modal-video-inner;
+}
+
+.videoBtnClose {
+  right: 0;
+}

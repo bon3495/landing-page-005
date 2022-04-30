@@ -1,0 +1,17 @@
+export { default as Header } from './Header';
+export { default as Layout } from './Layout';
+export { default as Footer } from './Footer';
+export { default as SEO } from './SEO';
+export { default as Banner } from './Banner';
+export { default as KeyFeature } from './KeyFeature';
+export { default as ServiceSection } from './ServiceSection';
+export { default as CoreFeature } from './CoreFeature';
+export { default as WorkFlow } from './WorkFlow';
+export { default as PricingPlan } from './PricingPlan';
+export { default as TeamSection } from './TeamSection';
+export { default as Testimonial } from './Testimonial';
+export { default as SubscribeSection } from './SubcribeSection';
+export { default as Logo } from './Logo';
+export { default as LinkCustom } from './LinkCustom';
+export { default as ButtonCustom } from './ButtonCustom';
+export { default as MobileDrawer } from './MobileDrawer';

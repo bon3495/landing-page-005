@@ -1,0 +1,56 @@
+.workflow {
+  background-image: url('../../assets/patternBG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center center;
+}
+
+.workflowStep {
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 152px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 160px;
+    height: 60px;
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1220px) {
+      width: 200px;
+      left: 180px;
+    }
+
+    @media screen and (min-width: 1620px) {
+      width: 230px;
+    }
+  }
+
+  &:nth-of-type(2n-1)::before {
+    background-image: url('../../assets/arrowOdd.svg');
+  }
+
+  &:nth-of-type(2n)::before {
+    background-image: url('../../assets/arrowEven.svg');
+  }
+
+  &:last-child::before {
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &:nth-of-type(2n-1)::before {
+      top: -20px;
+    }
+    &:nth-of-type(2n)::before {
+      top: 26px;
+    }
+  }
+}
