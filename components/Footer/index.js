@@ -34,7 +34,7 @@ const Footer = () => {
             </a>
           </Link>
           <div className="my-[25px] sm:my-[35px]">
-            <nav className="flex items-center justify-center">
+            <nav className="flex items-center justify-center flex-wrap gap-y-[10px]">
               {menuItem.map(({ path, label }) => (
                 <Link key={label} href={path}>
                   <a className="text-[15px] text-text font-normal transition-all ease-in-out duration-300 leading-normal md:leading-[1.8] px-[10px] md:px-[20px] hover:text-primary">
